@@ -1,0 +1,4 @@
+﻿  Application.cpp
+C:\Users\ebube\source\repos\Neural_Network\Neural_Network\Application\Application.cpp(15,40): warning C4305: 'argument': truncation from 'double' to 'ML::mFloat'
+C:\Users\ebube\source\repos\Neural_Network\Neural_Network\Application\Application.cpp(86,25): warning C4018: '<': signed/unsigned mismatch
+  Neural_Network.vcxproj -> C:\Users\ebube\source\repos\Neural_Network\Debug\Neural_Network.exe
