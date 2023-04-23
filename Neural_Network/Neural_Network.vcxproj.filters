@@ -33,10 +33,10 @@
     <ClCompile Include="ML\Net\Network\Network.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ML\Net\Neurone\Bias.cpp">
+    <ClCompile Include="ML\Net\Neuron\Bias.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ML\Net\Neurone\Neurone.cpp">
+    <ClCompile Include="ML\Net\Neuron\Neuron.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ML\Trainer\Trainer.cpp">
@@ -65,7 +65,7 @@
     <ClInclude Include="ML\Network.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ML\Net\Neurone\Neurone.h">
+    <ClInclude Include="ML\Net\Neuron\Neuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ML\Trainer\Trainer.h">

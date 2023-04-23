@@ -52,7 +52,7 @@ namespace ML
 	{
 		++m_numberOfDataValues;
 
-		for (Neurone& n : getOutputLayer())
+		for (Neuron& n : getOutputLayer())
 		{
 			mFloat derivative = -2.0f;
 			derivative *= getCorrectVal(n.getIndex()) - n.getOutput();

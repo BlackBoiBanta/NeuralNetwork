@@ -147,8 +147,8 @@
     <ClCompile Include="ML\Math\Math.cpp" />
     <ClCompile Include="ML\Net\Layer\Layer.cpp" />
     <ClCompile Include="ML\Net\Network\Network.cpp" />
-    <ClCompile Include="ML\Net\Neurone\Bias.cpp" />
-    <ClCompile Include="ML\Net\Neurone\Neurone.cpp" />
+    <ClCompile Include="ML\Net\Neuron\Bias.cpp" />
+    <ClCompile Include="ML\Net\Neuron\Neuron.cpp" />
     <ClCompile Include="ML\Tester\Tester.cpp" />
     <ClCompile Include="ML\Trainer\Trainer.cpp" />
   </ItemGroup>
@@ -159,7 +159,7 @@
     <ClInclude Include="ML\Math\Math.h" />
     <ClInclude Include="ML\Matrix\Matrix.h" />
     <ClInclude Include="ML\Network.h" />
-    <ClInclude Include="ML\Net\Neurone\Neurone.h" />
+    <ClInclude Include="ML\Net\Neuron\Neuron.h" />
     <ClInclude Include="ML\Tester\Tester.h" />
     <ClInclude Include="ML\Trainer\Trainer.h" />
   </ItemGroup>

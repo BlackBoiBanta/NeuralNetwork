@@ -53,7 +53,7 @@ namespace ML
 		}
 	}
 	
-	DEFINE_ITERATORS(Neurone, Layer, m_neurones);
+	DEFINE_ITERATORS(Neuron, Layer, m_neurones);
 
 	const Layer* Layer::getFront() const
 	{
@@ -102,7 +102,7 @@ namespace ML
 
 	void Layer::calcDeltaWeights()
 	{
-		for (Neurone& n : *this)
+		for (Neuron& n : *this)
 			n.calcGradient(*getFront());
 		getBias().calcGradient(*getFront());
 	}
@@ -112,7 +112,7 @@ namespace ML
 		if (!m_back)
 			return;
 
-		for (Neurone& n : *this)
+		for (Neuron& n : *this)
 		{
 			n.setValue(addOutputs(n.getIndex()));
 			n.setOutput(actFunc(n.getValue()));
@@ -121,7 +121,7 @@ namespace ML
 
 	void Layer::applyDeltaWeights(mFloat lr, mFloat alpha, uInt noDataValues)
 	{
-		for (Neurone& n : *this)
+		for (Neuron& n : *this)
 			n.applyGradients(lr, alpha, noDataValues);
 		getBias().applyGradients(lr, alpha, noDataValues);
 	}
@@ -133,7 +133,7 @@ namespace ML
 		if (!m_back) 
 			return sum;
 
-		for (Neurone& n : *m_back)
+		for (Neuron& n : *m_back)
 			sum += n.getWeightedVal(index);
 
 		sum += m_back->getBias()[index].WEIGHT;

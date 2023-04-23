@@ -1,5 +1,5 @@
 #pragma once 
-#include "Net/Neurone/Neurone.h"
+#include "Net/Neuron/Neuron.h"
 
 namespace ML
 {
@@ -37,12 +37,12 @@ namespace ML
         void propagateOutputs(); 
         mFloat addOutputs(uInt index);
 
-        DECLARE_ITERATORS(Neurone, Layer);
+        DECLARE_ITERATORS(Neuron, Layer);
 
         Math::FuncPair m_func;
     
     private:
-        Vec<Neurone> m_neurones;
+        Vec<Neuron> m_neurones;
         Var<Bias> m_bias;
 
         Layer* m_front;

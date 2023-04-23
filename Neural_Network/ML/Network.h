@@ -20,7 +20,7 @@ namespace ML
 				std::cout << "There will be a possible loss of data, as your input data type is larger than the sizeof a float.\n";
 
 			uInt i = 0;
-			for (Neurone& n : getInputLayer())
+			for (Neuron& n : getInputLayer())
 			{
 				if (i == size)
 					assert(false && "The input data should be a vector of equal length to the input layer...\n");
