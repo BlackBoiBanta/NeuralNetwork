@@ -1,23 +1,4 @@
 ﻿  Application.cpp
-C:\Users\ebube\source\repos\Neural_Network\Neural_Network\Application\Application.cpp(15,40): warning C4305: 'argument': truncation from 'double' to 'ML::mFloat'
-C:\Users\ebube\source\repos\Neural_Network\Neural_Network\Application\Application.cpp(86,25): warning C4018: '<': signed/unsigned mismatch
-  Layer.cpp
-C:\Users\ebube\source\repos\Neural_Network\Neural_Network\ML\Net\Layer\Layer.cpp(18,19): warning C4244: 'return': conversion from 'double' to 'ML::mFloat', possible loss of data
-C:\Users\ebube\source\repos\Neural_Network\Neural_Network\ML\Net\Layer\Layer.cpp(95,22): warning C4244: 'return': conversion from '_Ret' to 'ML::mFloat', possible loss of data
-          with
-          [
-              _Ret=double
-          ]
-C:\Users\ebube\source\repos\Neural_Network\Neural_Network\ML\Net\Layer\Layer.cpp(100,20): warning C4244: 'return': conversion from '_Ret' to 'ML::mFloat', possible loss of data
-          with
-          [
-              _Ret=double
-          ]
-  Network.cpp
-  Bias.cpp
-  Neuron.cpp
-  Tester.cpp
-  Trainer.cpp
-C:\Users\ebube\source\repos\Neural_Network\Neural_Network\ML\Trainer\Trainer.cpp(49,48): warning C4244: 'argument': conversion from 'ML::mFloat' to 'ML::uInt', possible loss of data
-  Generating Code...
+C:\Users\ebube\source\repos\Neural_Network\Neural_Network\Application\Application.cpp(37,40): warning C4305: 'argument': truncation from 'double' to 'ML::mFloat'
+C:\Users\ebube\source\repos\Neural_Network\Neural_Network\Application\Application.cpp(108,25): warning C4018: '<': signed/unsigned mismatch
   Neural_Network.vcxproj -> C:\Users\ebube\source\repos\Neural_Network\Debug\Neural_Network.exe

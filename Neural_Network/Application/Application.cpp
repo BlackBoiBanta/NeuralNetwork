@@ -1,4 +1,6 @@
+#include "Network.h"
 #include "Tester/Tester.h"
+#include "Matrix/Matrix.h"
 
 void eraseLines(ML::uInt lines);
 void printLabel(std::ifstream&, ML::uInt index);
@@ -11,6 +13,26 @@ void testCallBack(ML::CallBack_Info info);
 
 int main()
 {	
+
+	math::Mat<3, 3> mat = 
+	{
+		1, 2, 3,
+		2, 3, 1,
+		3, 1, 2
+	};
+
+	math::Mat<3, 2> anotherMat =
+	{
+		1, 2,
+		2, 1,
+		3, 4
+
+	};
+
+	auto thing = mat * anotherMat;
+
+	std::cout << thing << "\n";
+
 	ML::Vec<ML::uInt> topology = { 28 * 28, 16, 16, 10 };
 	ML::NetConfig cfg(topology, 0.15, 0.65);
 	cfg.setAllActivationFuncs(ML::Math::sigmoidFunc);
@@ -20,9 +42,9 @@ int main()
 	
 	ML::Trainer trainer(net, 60000, "TRAINING_DATA/train-images.idx3-ubyte", 16, "TRAINING_DATA/train-labels.idx1-ubyte", 8, 12); // there might be some spacing in between each training object, so make stride parameter in future
 
-	trainer.train(epochCallBack);
+	//trainer.train(epochCallBack);
 
-	ML::test(net, 10, trainer.m_trainingData, trainer.m_trainingLabels, testCallBack);
+	//ML::test(net, 10, trainer.m_trainingData, trainer.m_trainingLabels, testCallBack);
 
 	return 0;
 }
